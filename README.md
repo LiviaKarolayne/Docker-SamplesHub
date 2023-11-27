@@ -6,8 +6,6 @@ Este repositório foi concebido para compartilhar exemplos práticos de aplicaç
 Dentro deste espaço, você terá acesso a uma variedade de casos reais e aplicáveis do Docker, desenvolvidos para oferecer soluções tangíveis a cenários comuns, simplificando e otimizando o uso desta tecnologia.
 
 ## Estrutura do Projeto
-## Project Structure
-
 ### 1. [`multi-stage-build/`](multi-stage-build/)
 **Descrição:** Implementação da abordagem Multi-stage builds para criar ambientes de produção otimizados em termos de espaço, visando eficiência e economia de recursos computacionais.
 
