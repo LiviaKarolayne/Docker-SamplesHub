@@ -1,6 +1,5 @@
 # Docker: Código Sincronizado
-Este projeto fornece um exemplo prático da utilização de volumes Docker com o objetivo de otmizar o desenvolvimento e a entrega de aplicações em containers.
-
+Este projeto fornece um exemplo prático da utilização de volumes Docker visando otimizar o desenvolvimento e a entrega de aplicações em containers.
 Diferenciando-se da abordagem convencional de persistência de dados, a técnica adotada neste projeto utiliza os volumes Docker de forma estratégica para realizar a sincronização em tempo real de aplicações no interior do container, eliminando a necessidade de reconstruir a imagem a cada atualização de código.
 
 Esse método não apenas reduz o tempo de desenvolvimento, mas também estabelece um ambiente isolado e estável, promovendo uma abordagem contínua no ciclo de desenvolvimento e entrega de aplicações.
