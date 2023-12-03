@@ -9,6 +9,9 @@ Dentro deste espaço, você terá acesso a uma variedade de casos reais e aplic�
 ### 1. [`multi-stage-build/`](multi-stage-build/)
 **Descrição:** Implementação da abordagem Multi-stage builds para criar ambientes de produção otimizados em termos de espaço, visando eficiência e economia de recursos computacionais.
 
+### 2. [`volumes/`](volumes)
+Nesse diretório,  estão contidas implementações de exemplos que destacam algumas aplicações prática de volumes no Docker.
+
 ## Contribuições
 Sinta-se à vontade para contribuir com seus próprios exemplos e aprimorar este repositório como um recurso colaborativo, beneficiando a comunidade Docker com experiências e perspectivas diversas.
 
