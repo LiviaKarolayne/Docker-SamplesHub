@@ -28,7 +28,7 @@ Aqui está um exemplo básico de como utilizar este projeto:
 cd multi-stage-build
 
 # Execute o build das imagens
-dodocker-compose build
+docker-compose build
 
 # Verifique o tamanho de cada imagem
 docker images
