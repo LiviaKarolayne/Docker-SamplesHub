@@ -1,0 +1,95 @@
+Docker Healthchecks:
+  Descrição: Adicionar verificações de saúde ao Dockerfile para monitorar o estado do contêiner e realizar ações com base nesse estado.
+  Caso de Uso: Garantir a disponibilidade e a integridade de um aplicativo em execução.
+
+Docker Networking e Comunicação entre Contêineres:
+  Descrição: Utilizar redes Docker para facilitar a comunicação entre contêineres, evitando o uso de IPs fixos.
+  Caso de Uso: Comunicação eficiente entre serviços em uma aplicação distribuída.
+
+Docker Volumes e Bind Mounts:
+  Descrição: Utilizar volumes para persistir dados entre execuções de contêineres ou para compartilhar dados entre contêineres.
+  Caso de Uso: Persistência de dados, compartilhamento de arquivos entre host e contêiner.
+
+Orquestração de Contêineres:
+  Descrição: Utilizar Docker Swarm ou Kubernetes para orquestrar contêineres em ambientes de produção distribuídos.
+  Caso de Uso: Gerenciamento eficiente de contêineres em grande escala, facilitando a escalabilidade e a disponibilidade de aplicativos.
+
+Ambientes de Desenvolvimento Reproduzíveis:
+  Descrição: Criar ambientes de desenvolvimento consistentes em várias máquinas, garantindo que todos os desenvolvedores trabalhem nas mesmas versões de software e dependências.
+  Caso de Uso: Garantir consistência e evitar problemas de compatibilidade entre ambientes de desenvolvimento.
+
+Microsserviços:
+  Descrição: Implementar arquiteturas de microsserviços, onde cada serviço é encapsulado em um contêiner independente, facilitando o desenvolvimento, escalabilidade e manutenção.
+  Caso de Uso: Desenvolvimento e implantação ágil de serviços independentes, favorecendo a escalabilidade horizontal.
+
+Pipeline de Integração Contínua e Implantação Contínua (CI/CD):
+  Descrição: Construir pipelines CI/CD eficientes usando contêineres Docker para empacotar e entregar aplicativos de maneira rápida e confiável.
+  Caso de Uso: Automação do ciclo de vida de desenvolvimento, desde a integração até a entrega em produção.
+
+Testes Automatizados:
+  Descrição: Facilitar testes automatizados integrando contêineres Docker em processos de teste de unidade, integração e aceitação.
+  Caso de Uso: Garantir a qualidade do software por meio de testes automatizados em ambientes isolados e controlados.
+Desenvolvimento de Aplicativos Serverless:
+
+    Descrição: Suportar arquiteturas serverless usando contêineres como unidades de execução em plataformas serverless compatíveis com Docker.
+    Caso de Uso: Oferecer flexibilidade no desenvolvimento e implantação de funções serverless usando contêineres.
+
+Desenvolvimento de Aplicativos Serverless:
+  Descrição: Suportar arquiteturas serverless usando contêineres como unidades de execução em plataformas serverless compatíveis com Docker.
+  Caso de Uso: Oferecer flexibilidade no desenvolvimento e implantação de funções serverless usando contêineres.
+
+Criação de Imagens Efêmeras com Buildx:
+  Descrição: Explore recursos avançados como o Buildx para criar imagens Docker efêmeras, úteis para casos temporários, como testes específicos ou geração de artefatos temporários.
+  Caso de Uso: Agilizar a criação de imagens temporárias para fins específicos, como testes ou geração de artefatos.
+
+Redes Overlay para Comunicação entre Contêineres:
+  Descrição: Use redes overlay para permitir comunicação segura e eficiente entre contêineres em diferentes hosts em um ambiente de contêiner distribuído.
+  Caso de Uso: Facilitar a comunicação entre contêineres em ambientes distribuídos, garantindo segurança e eficiência.
+
+Monitoramento com Prometheus e Grafana:
+  Descrição: Integre contêineres com ferramentas como Prometheus e Grafana para monitorar e visualizar o desempenho de seus aplicativos em execução.
+  Caso de Uso: Monitoramento eficaz do desempenho e da saúde de contêineres em ambientes de produção.
+
+Cache Eficiente com BuildKit:
+  Descrição: Aproveite as funcionalidades avançadas do BuildKit para otimizar o cache durante a construção de imagens, acelerando o processo de compilação.
+  Caso de Uso: Melhorar a eficiência na construção de imagens, reduzindo o tempo de compilação por meio de estratégias avançadas de caching.
+
+Docker Secrets:
+  Descrição: Docker Secrets gerencia informações sensíveis, como senhas, de forma segura, permitindo que apenas contêineres autorizados acessem essas informações.
+  Caso de Uso: Ao lidar com senhas e informações confidenciais, Docker Secrets é essencial para garantir que esses dados sejam protegidos e não estejam expostos nos arquivos de configuração.
+
+Docker Configs:
+  Descrição: Similar ao Docker Secrets, Docker Configs gerencia informações de configuração sensíveis, como arquivos de configuração.
+  Caso de Uso: Ao lidar com configurações específicas de aplicativos, como arquivos de configuração personalizados, Docker Configs ajuda a manter essas informações fora das imagens e facilita a gestão centralizada.
+
+Docker Plugins:
+  Descrição: Docker Plugins estende as funcionalidades do Docker ao permitir a integração de plugins de terceiros para armazenamento, rede e outros.
+  Caso de Uso: Ao integrar armazenamentos de dados personalizados ou redes específicas, os Docker Plugins fornecem uma maneira de estender as capacidades padrão do Docker.
+
+Docker Volume Plugins:
+  Descrição: Docker Volume Plugins estende as capacidades de gerenciamento de volumes do Docker ao permitir a integração com diferentes sistemas de armazenamento.
+  Caso de Uso: Em ambientes que requerem armazenamento externo especializado, como sistemas de arquivos distribuídos ou serviços de armazenamento em nuvem, Docker Volume Plugins facilitam a integração.
+
+Docker Security Scanning:
+  Descrição: Ferramentas como Docker Security Scanning ajudam a identificar vulnerabilidades de segurança nas imagens Docker.
+  Caso de Uso: Antes de implantar imagens em ambientes de produção, o Docker Security Scanning pode ser usado para realizar verificações de segurança automáticas e garantir que as imagens estejam livres de vulnerabilidades conhecidas.
+
+Docker API:
+  Descrição: Integração com a API do Docker para automação avançada e personalização de fluxos de trabalho.
+  Caso de Uso: Desenvolvedores podem usar a Docker API para automatizar tarefas específicas, criar interfaces personalizadas ou integrar o Docker com ferramentas de automação.
+
+Docker Build Hooks:
+  Descrição: Permite a execução de scripts antes ou depois da construção da imagem, facilitando personalizações específicas do projeto.
+  Caso de Uso: Para realizar ações personalizadas durante a construção de imagens, como instalação de dependências específicas, os Docker Build Hooks são úteis.
+
+Docker System Prune:
+  Descrição: Remove recursos não utilizados para otimizar o espaço em disco.
+  Caso de Uso: Periodicamente, executar o Docker System Prune ajuda a liberar espaço em disco removendo contêineres, imagens e volumes não utilizados.
+
+Docker Image Manifests:
+  Descrição: Permite a criação de manifestos multi-arquitetura para suportar plataformas diferentes em uma única imagem.
+  Caso de Uso: Ao desenvolver imagens que precisam ser executadas em várias arquiteturas, o uso de Docker Image Manifests simplifica a distribuição e a implantação.
+
+Docker Contexts:
+  Descrição: Facilita a gestão de vários contextos, permitindo que você alterne facilmente entre ambientes Docker diferentes.
+  Caso de Uso: Desenvolvedores que trabalham em vários projetos podem usar Docker Contexts para alternar entre ambientes de desenvolvimento e teste sem precisar reconfigurar manualmente o Docker.
