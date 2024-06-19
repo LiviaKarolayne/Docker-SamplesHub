@@ -1,8 +1,8 @@
-# Docker: Build
+# Docker Samples Hub: Build
 
-![Em Construção](https://img.shields.io/badge/🚧%20Em%20Construção-grey?style=for-the-badge)
+![Under Construction](https://img.shields.io/badge/🚧%20under%20construction-grey?style=for-the-badge)
 
-Este diretório contém implementações de exemplos que exploram aplicações práticas relacionadas ao processo de construção de imagens no Docker.
+This directory contains example implementations that explore practical applications related to the Docker image building process.
 
 #### 1.1 [`multi-stage-build/`](multi-stage-build)/
-**Descrição:** Implementação da abordagem Multi-stage builds para criar ambientes de produção otimizados em termos de espaço, visando eficiência e economia de recursos computacionais.
+**Description:** Implementation of the Multi-stage builds approach to create space-optimized production environments, aiming for efficiency and saving computational resources.
