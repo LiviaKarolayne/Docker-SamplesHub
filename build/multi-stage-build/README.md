@@ -1,45 +1,45 @@
-# Docker: Multi-stage Build
-Este projeto oferece um exemplo prático voltado para cenários de produção com restrições de espaço em disco. Além disso, apresenta boas práticas na criação de ambientes de produção eficientes. A abordagem principal adotada é o uso de builds de múltiplos estágios (Multi-stage builds) para otimizar ambientes de produção derivados de contêineres Docker, resultando em imagens com tamanhos significativamente reduzidos.
+# Build: Multi-stage Build
+This project provides a practical example for production scenarios with disk space constraints. It also presents best practices for creating efficient production environments. The main approach adopted is the use of multi-stage builds to optimize production environments derived from Docker containers, resulting in images with significantly reduced sizes.
 
-## Tabela de Conteúdos
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Estrutura do Projeto](#estrutura-do-projeto)
+## Summary of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
 
 
-## Instalação
-### Pré-requisitos
-Para garantir o correto funcionamento do projeto, é imprescindível que o **Docker** e o **Docker Compose** estejam instalados em sua máquina.
+## Installation
+### Prerequisites
+To ensure that the project works correctly, it is essential that **Docker** and **Docker Compose** are installed on your machine.
 
-### Comando de instalação
+### Installation command
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/LiviaKarolayne/Docker.git
 
-# Mude para o diretório do repositório
-cd Docker
+# Change to the repository directory
+cd Docker-SamplesHub
 ```
 
-## Uso
-Aqui está um exemplo básico de como utilizar este projeto:
+## Usage
+Here is a basic example of how to use this project:
 
 ```bash
-# Mude para o diretório do projeto
+# Change to the project directory
 cd multi-stage-build
 
-# Execute o build das imagens
+# Run the build of the images
 docker-compose build
 
-# Verifique o tamanho de cada imagem
+# Check the size of each image
 docker images
 ```
-#### Resultado esperado
-Neste exemplo, foram geradas duas imagens Docker: uma seguindo uma abordagem tradicional e outra otimizada utilizando o Multi-stage build. Desse modo, destaca-se uma economia de espaço notável, alcançando uma redução de 94% no tamanho da imagem otimizada em comparação com a abordagem convencional.
+#### Expected result
+In this example, two Docker images were generated: one following a traditional approach and the other optimized using the Multi-stage build. This resulted in a notable space saving, achieving a 94% reduction in the size of the optimized image compared to the conventional approach.
 
-![Resultado esperado](./doc/docker_image_list.jpeg)
+![Expected result](./doc/docker_image_list.jpeg)
 
-## Estrutura do Projeto
-O projeto segue uma estrutura de diretórios simples, organizando os principais artefatos e arquivos da seguinte forma:
+## Project Structure
+The project follows a simple directory structure, organizing the main artifacts and files as follows:
 ```text
 ├── multi-stage-build/
 │   ├── app.py
@@ -52,13 +52,13 @@ O projeto segue uma estrutura de diretórios simples, organizando os principais 
 │   └── requirements.txt
 ```
 
-#### Explicação dos Diretórios
-- `multi-stage-build/`: Contém o código-fonte principal do projeto
-  - `doc/`: Documentação adicional sobre o projeto.
-  - `app.py`: Contém o código-fonte principal de uma aplicação mínima em Flask.
-  - `docker-compose.yml`: Arquivo de configuração do Docker Compose, usado para definir as imagens docker.
-  - `Dockerfile`: Dockerfile simples que implementa uma abordagem tradicional para criação de uma imagem para ambientes de produção.
-  - `Dockerfile-multi-stage-build`: Dockerfile adicional que implementa uma abordagem de "multi-stage build", visando a criação de uma imagem otimizada para ambientes de produção.
-  - `README.md`: Este arquivo fornece uma visão geral do projeto, instruções e informações importantes.
-  - `requirements.txt`: Arquivo que lista as dependências necessárias para a aplicação mínima em Flask.
+#### Directories Explanation
+- `multi-stage-build/`: Contains the main source code of the project
+- `doc/`: Additional documentation about the project.
+- `app.py`: Contains the main source code of a minimal Flask application.
+- `docker-compose.yml`: Docker Compose configuration file, used to define Docker images.
+- `Dockerfile`: Simple Dockerfile that implements a traditional approach to creating an image for production environments.
+- `Dockerfile-multi-stage-build`: Additional Dockerfile that implements a "multi-stage build" approach, aiming to create an image optimized for production environments.
+- `README.md`: This file provides an overview of the project, instructions and important information.
+- `requirements.txt`: File that lists the dependencies required for the minimal Flask application.
 

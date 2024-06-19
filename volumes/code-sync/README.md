@@ -1,55 +1,54 @@
-# Docker: Código Sincronizado
-Este projeto fornece um exemplo prático da utilização de volumes Docker com o objetivo de otimizar o desenvolvimento e a entrega de aplicações em containers.
+# Volumes: Code Synchronization
+This project provides a practical example of the use of Docker volumes to optimize the development and delivery of containerized applications.
 
-Diferenciando-se da abordagem convencional de persistência de dados, a técnica adotada neste projeto utiliza os volumes Docker de forma estratégica para realizar a sincronização em tempo real de aplicações no interior do container, eliminando a necessidade de reconstruir a imagem a cada atualização de código.
+Differing from the conventional approach to data persistence, the technique adopted in this project uses Docker volumes strategically to perform real-time synchronization of applications within the container, eliminating the need to rebuild the image with each code update.
 
-Esse método não apenas reduz o tempo de desenvolvimento, mas também estabelece um ambiente isolado e estável, promovendo uma abordagem contínua no ciclo de desenvolvimento e entrega de aplicações.
+This method not only reduces development time, but also establishes an isolated and stable environment, promoting a continuous approach in the application development and delivery cycle.
 
-## Tabela de Conteúdos
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Estrutura do Projeto](#estrutura-do-projeto)
+## Summary of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
 
+## Installation
+### Prerequisites
+To ensure that the project works correctly, it is essential that **Docker** and **Docker Compose** are installed on your machine.
 
-## Instalação
-### Pré-requisitos
-Para garantir o correto funcionamento do projeto, é imprescindível que o **Docker** e o **Docker Compose** estejam instalados em sua máquina.
-
-### Comando de instalação
+### Installation command
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/LiviaKarolayne/Docker.git
 
-# Mude para o diretório do repositório
-cd Docker
+# Change to the project directory
+cd Docker-SamplesHub
 ```
 
-## Uso
-Aqui está um exemplo básico de como utilizar este projeto:
+## Usage
+Here is a basic example of how to use this project:
 
 ```bash
-# Mude para o diretório do projeto
+# Change to the project directory
 cd volumes/code-sync
 
-# Execute a inicialização do ambiente Compose 
+# Perform a Compose environment initialization
 docker-compose up -d
 
-# Envie uma requisição à aplicação
+# Send an HTTP request to the application
 curl localhost:5000
 
-# Modifique o conteúdo da aplicação
+# Modify the application content
 sed -i 's/Hello, World!/Testando Code-Sync/g' app.py
 
-# Certifique-se de que a alteração foi aplicada
+# Make sure the change has been applied
 curl localhost:5000
 ```
-#### Resultado esperado
-Neste exemplo, após a inicialização do ambiente Compose no qual a aplicação está hospedada, ao realizar a primeira requisição, foi obtido o trecho original contendo a mensagem "Hello, World!". Com as modificações no código, a aplicação foi atualizada internamente no container, passando a responder com "Testando Code-Sync" para mesma requisição.
+#### Expected result
+In this example, after initializing the Compose environment in which the application is hosted, when making the first request, the original snippet containing the message "Hello, World!" was obtained. With the modifications in the code, the application was updated internally in the container, starting to respond with "Testing Code-Sync" for the same request.
 
-![Resultado esperado](./doc/teste_code_sync.png)
+![Expected result](./doc/test_code_sync.png)
 
-## Estrutura do Projeto
-O projeto segue uma estrutura de diretórios simples, organizando os principais artefatos e arquivos da seguinte forma:
+## Project Structure
+The project follows a simple directory structure, organizing the main artifacts and files as follows:
 ```text
 ├── doc/
 ├── app.py
@@ -60,12 +59,12 @@ O projeto segue uma estrutura de diretórios simples, organizando os principais 
 └── requirements.txt
 ```
 
-#### Explicação dos Diretórios
-- `doc/`: Documentação adicional sobre o projeto.
-- `app.py`: Contém o código-fonte principal de uma aplicação mínima em Flask.
-- `docker-compose.yml`: Arquivo de configuração do Docker Compose, usado para definir as imagens docker.
-- `Dockerfile`: Dockerfile simples para criação de uma imagem destinadas a ambientes de produção.
-- `README.md`: Este arquivo fornece uma visão geral do projeto, instruções e informações importantes.
-- `requirements.txt`: Arquivo que lista as dependências necessárias para a aplicação mínima em Flask.
+#### Directories Explanation
+- `doc/`: Additional documentation about the project.
+- `app.py`: Contains the main source code of a minimal Flask application.
+- `docker-compose.yml`: Docker Compose configuration file, used to define Docker images.
+- `Dockerfile`: Simple Dockerfile for creating an image intended for production environments.
+- `README.md`: This file provides an overview of the project, instructions, and important information.
+- `requirements.txt`: File that lists the dependencies required for the minimal Flask application.
 
 

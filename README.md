@@ -1,18 +1,18 @@
-# Docker
-![Em Construção](https://img.shields.io/badge/🚧%20Em%20Construção-grey?style=for-the-badge)
+# Docker Samples Hub
+![Under Construction](https://img.shields.io/badge/🚧%20under%20construction-grey?style=for-the-badge)
 
-Este repositório foi concebido para compartilhar exemplos práticos de aplicações Docker, com o objetivo de proporcionar insights e facilitar a aprendizagem eficaz da tecnologia de contêineres.
+This repository was created to share practical examples of Docker applications, with the aim of providing insights and facilitating effective learning of container technology.
 
-Dentro deste espaço, você terá acesso a uma variedade de casos reais e aplicáveis do Docker, desenvolvidos para oferecer soluções tangíveis a cenários comuns, simplificando e otimizando o uso desta tecnologia.
+Within this space, you will have access to a variety of real and applicable Docker cases, designed to offer tangible solutions to common scenarios, simplifying and optimizing the use of this technology.
 
-## Estrutura do Projeto
+## Project Structure
 ### 1. [`build/`](build/)
-**Descrição:** Nesse diretório, estão contidas implementações de exemplos que exploram aplicações práticas relacionadas ao processo de construção de imagens no Docker.
+**Description:** This directory contains implementations of examples that explore practical applications related to the image building process in Docker.
 
 ### 2. [`volumes/`](volumes/)
-Nesse diretório, estão contidas implementações de exemplos que destacam algumas aplicações prática do uso de volumes no Docker.
+**Description:** This directory contains example implementations that highlight some practical applications of using volumes in Docker.
 
-## Contribuições
-Sinta-se à vontade para contribuir com seus próprios exemplos e aprimorar este repositório como um recurso colaborativo, beneficiando a comunidade Docker com experiências e perspectivas diversas.
+## Contributions
+Feel free to contribute your own examples and improve this repository as a collaborative resource, benefiting the Docker community with diverse experiences and perspectives.
 
 🐳✨
